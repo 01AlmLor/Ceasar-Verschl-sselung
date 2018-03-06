@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnEntschluesseln = new System.Windows.Forms.Button();
             this.txtAusgabeEntschluesselt = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn1Verschlüsseln
@@ -123,11 +124,21 @@
             this.txtAusgabeEntschluesselt.Text = "";
             this.txtAusgabeEntschluesselt.TextChanged += new System.EventHandler(this.txtAusgabeEntschluesselt_TextChanged);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(296, 186);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Entschlüsselt";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 461);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAusgabeEntschluesselt);
             this.Controls.Add(this.btnEntschluesseln);
             this.Controls.Add(this.label3);
@@ -155,6 +166,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnEntschluesseln;
         private System.Windows.Forms.RichTextBox txtAusgabeEntschluesselt;
+        private System.Windows.Forms.Label label4;
     }
 }
 
