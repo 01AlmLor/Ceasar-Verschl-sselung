@@ -35,6 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtCode = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnEntschluesseln = new System.Windows.Forms.Button();
+            this.txtAusgabeEntschluesselt = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btn1Verschlüsseln
@@ -101,11 +103,33 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Verschlüsselungskode eingaben";
             // 
+            // btnEntschluesseln
+            // 
+            this.btnEntschluesseln.Location = new System.Drawing.Point(198, 207);
+            this.btnEntschluesseln.Name = "btnEntschluesseln";
+            this.btnEntschluesseln.Size = new System.Drawing.Size(75, 23);
+            this.btnEntschluesseln.TabIndex = 7;
+            this.btnEntschluesseln.Text = "Entschlüsseln";
+            this.btnEntschluesseln.UseVisualStyleBackColor = true;
+            this.btnEntschluesseln.Click += new System.EventHandler(this.btnEntschluesseln_Click);
+            // 
+            // txtAusgabeEntschluesselt
+            // 
+            this.txtAusgabeEntschluesselt.Enabled = false;
+            this.txtAusgabeEntschluesselt.Location = new System.Drawing.Point(279, 217);
+            this.txtAusgabeEntschluesselt.Name = "txtAusgabeEntschluesselt";
+            this.txtAusgabeEntschluesselt.Size = new System.Drawing.Size(148, 96);
+            this.txtAusgabeEntschluesselt.TabIndex = 8;
+            this.txtAusgabeEntschluesselt.Text = "";
+            this.txtAusgabeEntschluesselt.TextChanged += new System.EventHandler(this.txtAusgabeEntschluesselt_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 461);
+            this.Controls.Add(this.txtAusgabeEntschluesselt);
+            this.Controls.Add(this.btnEntschluesseln);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCode);
             this.Controls.Add(this.label2);
@@ -129,6 +153,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnEntschluesseln;
+        private System.Windows.Forms.RichTextBox txtAusgabeEntschluesselt;
     }
 }
 

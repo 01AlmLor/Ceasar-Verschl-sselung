@@ -51,5 +51,31 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void btnEntschluesseln_Click(object sender, EventArgs e)
+        {
+            char[] eingabe = txtAusgabe.Text.ToCharArray();
+            int asciicode = 0;
+            int schluessel = Convert.ToInt16(txtCode.Text);
+            string halter = "";
+
+            string ausgabe = "";
+
+            for (int i = 0; i < eingabe.Length; i++)
+            {
+                asciicode = Convert.ToInt32(eingabe[i]);
+                asciicode = asciicode - schluessel;
+                eingabe[i] = Convert.ToChar(asciicode);
+                halter = Convert.ToString(eingabe[i]);
+                ausgabe = ausgabe + halter;
+
+            }
+            txtAusgabeEntschluesselt.Text = ausgabe;
+        }
+
+        private void txtAusgabeEntschluesselt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
